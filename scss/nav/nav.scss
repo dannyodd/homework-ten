@@ -1,0 +1,94 @@
+.nav {
+    z-index: 999;
+    height: 90px;
+    max-width: 1006px;
+    width: 78.6%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .nav-links {
+        max-width: 524px;
+        width: 52%;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #79ADDC;
+        
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+    }
+
+    .nav-bottom-line {
+        max-width: 980px;
+        width: 97.4%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+    }
+
+    .commonNavBorder {
+        background-color: black;
+    }
+    
+    .commonNavLinks {
+        a {
+            color: black;
+        }
+    }
+}
+
+.commonNav {
+    position: relative;
+}
+
+
+// nav {
+//     height: 90px;
+//     max-width: 1006px;
+//     width: 78.6%;
+//     left: 0;
+//     right: 0;
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     position: relative;
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     .links {
+//         max-width: 524px;
+//         width: 52%;
+//         height: 42px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-evenly;
+//         color: black;
+        
+//         a {
+//             color: black;
+//             text-decoration: none;
+//             text-transform: lowercase;
+//         }
+//     }
+
+//     .bottom-line {
+//         max-width: 980px;
+//         width: 97.4%;
+//         height: 2px;
+//         background-color: black;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }

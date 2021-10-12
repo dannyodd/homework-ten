@@ -1,0 +1,60 @@
+.special-offer {
+    width: 76.6%;
+    max-width: 980px;
+    margin: 56px auto 40px auto;
+    .so-header {
+        h2 {
+        @include common-header($width: 200px);
+        }
+    }
+    .so-item {
+        margin-bottom: 60px;
+        display: flex;
+        .so-img {
+            width: 199px;
+            height: 287px;
+        }
+        .so-info {
+            height: 287px;
+            margin-left: 20px;
+            position: relative;
+            h2 {
+                @include common-header($width: 200px);
+            }
+            h3 {
+                font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+                color: #FF7D38;
+                position: absolute;
+                left: 205px;
+                top: 20px;
+            }
+            p {
+                max-width: 290px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 14pt;
+                font-weight: bold;
+            }
+            .so-button {
+                @include site-button;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .special-offer {
+        .so-item {
+            flex-direction: column;
+            .so-info {
+                margin: 20px 0;
+                height: auto;
+                .so-button {
+                    margin-top: 20px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

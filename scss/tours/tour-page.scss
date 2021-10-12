@@ -1,0 +1,89 @@
+.tour-page {
+    max-width: 981px;
+    width: 76.6%;
+    margin: 0 auto;
+    .hero {
+        width: 100%;
+        height: 413px;
+        //background-color: aqua;
+        position: relative;
+        margin-top: 48.5px;
+        overflow: hidden;
+        h1, h2 {
+            position: absolute;
+            font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 55pt;
+            padding-left: 30px;
+            padding-top: 18px;
+        }
+        h2 {
+            bottom: -5px;
+            right: 0;
+            margin: 0;
+            padding-right: 10px;
+            text-transform: uppercase;
+        }
+    }
+    .photo-container {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        //background-color:blueviolet;
+        margin-top: 40px;
+        img {
+            height: 347px;
+            width: 298px;
+        }
+    }
+    .itinerary-container {
+        margin-top: 29px;
+        .itinerary-item {
+            margin-bottom: 80px;
+            h1 {
+                font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+                font-size: 30pt;
+                border-bottom: 2px solid black;
+                width: 171px;
+            }
+            p {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16pt;
+                //font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+    .book-now {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        .book-button {
+            @include site-button;
+        }
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .tour-page {
+        .photo-container {
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                margin: 20px auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .tour-page {
+        .photo-container {
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.about {
+    margin: 50px auto;
+    min-height: 800px;
+    max-width: 1006px;
+    width: 78.6%;
+    .about-main {
+        //position: relative;
+        margin-top: 90px;
+        .about-header {
+            h1 {
+                border-bottom: 2px solid black;
+                width: 171px;
+                font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+                font-size: 40pt;
+            }
+        }
+        .about-p {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16pt;
+            font-weight: bold;
+        }
+    }
+    .client-quotes {
+        //position: relative;
+        margin-top: 100px;
+        h2 {
+            border-bottom: 2px solid black;
+            width: 255px;
+            font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+            font-size: 25pt;
+        }
+        .about-person {
+            max-width: 676px;
+            min-height: 150px;
+            //background-color: aqua;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .person-img {
+                width: 250px;
+                height: 150px;
+                //background-color: bisque;
+            }
+            .person-p {
+                max-width: 385px;
+                padding-left: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Lato', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16pt;
+                font-style: italic;
+                font-weight: bold;
+            }
+            .person-name {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+                font-size: 16pt;
+                font-weight: bold;
+                color: #79ADDC;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        min-height: 1200px;
+        .about-person {
+            //display: block;
+            flex-direction: column;
+            padding-bottom: 20px;
+            .person-img {
+                margin-bottom: 20px;
+            }
+            .person-p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
